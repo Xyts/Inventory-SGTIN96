@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Inventory.API</name>
+    </assembly>
+    <members>
+        <member name="M:Inventory.API.Controllers.InventoryController.PostInventoryData(Inventory.API.Models.DTOs.InventoryDTO)">
+            <summary>
+            Posting inventory data
+            </summary>
+            <param name="inventoryDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Inventory.API.Controllers.InventoryController.GetItemsByInventoryId(System.String)">
+            <summary>
+            Get inventory items by inventory Id
+            </summary>
+            <param name="inventoryId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Inventory.API.Controllers.InventoryController.DeleteItemsByInventoryId(System.String)">
+            <summary>
+            Remove inventory items by inventory Id
+            </summary>
+            <param name="inventoryId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Inventory.API.Controllers.InventoryController.GetQuantityByProductNumber(System.String)">
+            <summary>
+            Count of inventoried items grouped by a specific product for a specific inventory 
+            </summary>
+            <param name="inventoryId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Inventory.API.Controllers.InventoryController.GetQuantityByProductNumberAndDate">
+            <summary>
+            Count of inventoried items grouped by a specific product per day
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Inventory.API.Controllers.InventoryController.GetQuantityByCompany">
+            <summary>
+            Count of inventoried items grouped by a specific company
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Inventory.API.Controllers.ProductDefinitionController.PostProductDefinition(Inventory.API.Models.DTOs.ProductDefinitionDTO)">
+            <summary>
+            Posting product definition data
+            </summary>
+            <param name="productDefinitionDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Inventory.API.Controllers.ProductDefinitionController.DeleteProductByCompanyPrefixAndReference(System.Int64,System.Int32)">
+            <summary>
+            Delete product definition
+            </summary>
+            <param name="companyPrefix"></param>
+            <param name="reference"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
